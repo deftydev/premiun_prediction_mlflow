@@ -1,0 +1,128 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+  
+      .form-container {
+        max-width: 400px;
+        padding: 20px;
+        background-color: #f8f9fa;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="form-container">
+<form action="{{url_for('predict_datapoint')}}" method="POST">
+  <h1 class="text-center mb-3">Insurance Expense Prediction</h1>
+
+
+  <div class="form-group">
+
+    <div class="input-group">
+      <div class="input-group-prepend">
+      <label  class="input-group-text" for="age" >Age&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    </div>
+
+   
+      <input class="form-control" type="text"    id="age" name="age" placeholder="Enter Your Age">
+    </div>
+  </div>
+
+  
+  
+
+    <div class="form-group">
+      <div class="input-group">
+        <div class="input-group-prepend">
+        <label  class="input-group-text" for="bmi">BMI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+      </div>
+        <input class="form-control" type="text" id="bmi" name="bmi" placeholder="Enter Body Mass index value">
+    </div>
+  </div>
+  
+<div class="form-group">
+  <div class="input-group">
+    <div class="input-group-prepend">
+  <label  class="input-group-text" for="children">Children</label>
+</div>
+  <select class="custom-select" id="children" name="children">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3+</option>
+  </select>
+</div>
+</div>
+  
+<div class="form-group">
+  <div class="input-group">
+    <div class="input-group-prepend">
+  <label  class="input-group-text" for="sex">Gender&nbsp;&nbsp;</label>
+</div>
+  <select class="custom-select" id="sex" name="sex">
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+  </select>
+</div>
+</div>
+
+<div class="form-group">
+  <div class="input-group">
+    <div class="input-group-prepend">
+  <label class="input-group-text" for="smoker">Smoker&nbsp;&nbsp;</label>
+</div>
+  <select class="custom-select" id="smoker" name="smoker">
+    <option value="yes">Yes</option>
+    <option value="no">No</option>
+  </select>
+</div>
+</div>
+
+<div class="form-group">
+  <div class="input-group">
+    <div class="input-group-prepend">
+  <label class="input-group-text" for="region">Region&nbsp;&nbsp;&nbsp;</label>
+</div>
+    <select class="custom-select" id="region" name="region">
+      <option value="southwest">southwest</option>
+      <option value="southeast">southeast</option>
+      <option value="northwest">northwest</option>
+      <option value="northeast">northeast</option>
+    </select>
+  </div>
+  </div>
+
+<div style="clear:both;"></div>
+<button type="submit" class="btn btn-primary btn-block">Submit&nbsp;</button>
+</form>
+
+</div>
+</div>
+
+</body>
+</html>
+
+
+{% endblock %}
