@@ -1,4 +1,4 @@
-# Insurance_expense_prediction_Web_App
+# Insurance_premium_prediction_Web_App
 Expense prediction
 
 
