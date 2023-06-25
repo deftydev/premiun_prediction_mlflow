@@ -3,5 +3,7 @@ pandas
 Flask
 seaborn
 scikit-learn
+mlflow
+dvc
 
 # -e .
