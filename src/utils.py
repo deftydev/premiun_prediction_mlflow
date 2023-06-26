@@ -21,21 +21,14 @@ def save_object(file_path, obj):
         raise CustomException(e, sys)
     
 
-def evaluate_model(models,X_train,y_train,X_test,y_test):
-    report={}
-    for i in list(models.values()):
-        obj= i.fit(X_train,y_train)
-        y_pred= obj.predict(X_test)
+def evaluate_model(y_test,y_pred):
 
-        mae= mean_absolute_error(y_test,y_pred)
-        rmse= np.sqrt(mean_squared_error(y_test,y_pred))
+    mae= mean_absolute_error(y_test,y_pred)
+    rmse= np.sqrt(mean_squared_error(y_test,y_pred))
 
-        r2= r2_score(y_test,y_pred)
-        y=0
-        report[list(models.keys())[y]]=r2 
-        y+=1
+    r2= r2_score(y_test,y_pred)
 
-    return report
+    return mae,rmse,r2
 
 
 def load_object(file_path):
