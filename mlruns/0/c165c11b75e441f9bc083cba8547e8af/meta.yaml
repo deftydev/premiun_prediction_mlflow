@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/user/Desktop/premiun_prediction/premiun_prediction_mlflow/mlruns/0/c165c11b75e441f9bc083cba8547e8af/artifacts
+end_time: 1687761084178
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: c165c11b75e441f9bc083cba8547e8af
+run_name: welcoming-boar-509
+run_uuid: c165c11b75e441f9bc083cba8547e8af
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1687761078569
+status: 3
+tags: []
+user_id: user

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/user/Desktop/premiun_prediction/premiun_prediction_mlflow/mlruns/0/ca9f1091f82b488b9ae510f56bc423cb/artifacts
+end_time: 1687761197338
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: ca9f1091f82b488b9ae510f56bc423cb
+run_name: resilient-sponge-420
+run_uuid: ca9f1091f82b488b9ae510f56bc423cb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1687761192701
+status: 3
+tags: []
+user_id: user

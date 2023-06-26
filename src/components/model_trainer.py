@@ -71,9 +71,9 @@ class ModelTrainer:
         
 if __name__ == '__main__':
     args=argparse.ArgumentParser()
-    args.add_argument("--n_estimators", "-n", default=20, type=int)
-    args.add_argument("--max_depth", "-m", default=5, type=int)
-    args.add_argument("--min_samples_leaf", "-s", default=5, type=int)
+    args.add_argument("--n_estimators", "-n", default=25, type=int)
+    args.add_argument("--max_depth", "-m", default=6, type=int)
+    args.add_argument("--min_samples_leaf", "-s", default=8, type=int)
     parse_args=args.parse_args()
     try:
         obj= DataIngestion()
