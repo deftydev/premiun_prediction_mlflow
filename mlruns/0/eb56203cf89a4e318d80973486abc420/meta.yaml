@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/user/Desktop/premiun_prediction/premiun_prediction_mlflow/mlruns/0/eb56203cf89a4e318d80973486abc420/artifacts
+end_time: 1687761470420
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: eb56203cf89a4e318d80973486abc420
+run_name: calm-kit-975
+run_uuid: eb56203cf89a4e318d80973486abc420
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1687761466091
+status: 3
+tags: []
+user_id: user
