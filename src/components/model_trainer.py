@@ -59,6 +59,7 @@ class ModelTrainer:
                 logging.info(f'Best Model Found , Model Name : {best_model} , R2 Score : {r2}')
                 #mlflow model logging
                 mlflow.sklearn.log_model(Random_forest,"randomforestmodel")
+                
                 save_object(
                     file_path=self.model_trainer_config.model_file_path,
                     obj= Random_forest
