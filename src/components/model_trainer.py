@@ -13,7 +13,7 @@ from sklearn import tree
 from src.components.data_ingestion import DataIngestion
 from src.components.data_transformation import DataTransformation
 from src.utils import save_object
-from src.utils import evaluate_model
+from src.utils import evaluate_models
 
 from dataclasses import dataclass
 import sys
@@ -42,7 +42,7 @@ class ModelTrainer:
 
                 obj= Random_forest.fit(X_train,Y_train)
                 y_pred= obj.predict(X_test)
-                mae,rmse,r2 = evaluate_model(Y_test,y_pred)
+                mae,rmse,r2 = evaluate_models(Y_test,y_pred)
 
                 logging.info(f'mae : {mae}')
                 logging.info(f'rmse : {rmse}')

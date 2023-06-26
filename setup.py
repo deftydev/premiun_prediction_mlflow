@@ -17,7 +17,7 @@ def get_requirements(file_path:str)->List[str]:
 
 setup(
     name='src',
-    version='0.0.1',
+    version='0.0.2',
     author='deftydev',
     author_email='devanshgupta79212346@gmail.com',
     install_requires=get_requirements('requirements.txt'),
